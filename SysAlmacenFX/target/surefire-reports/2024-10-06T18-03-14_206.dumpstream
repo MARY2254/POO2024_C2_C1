@@ -1,0 +1,5 @@
+# Created at 2024-10-06T18:03:24.473
+Boot Manifest-JAR contains absolute paths in classpath 'D:\POO\DESARROLLO\POO2024_C2_C1\POO2024_C2_C1\SysAlmacenFX\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+
