@@ -59,7 +59,7 @@ public class CategoriaService {
         return repo.findById(id).get();
     }
 
-    public List<ComboBoxOption> listaCategoriaCombobox(){
+    public List<ComboBoxOption> listarCombobox(){
         List<ComboBoxOption> listar=new ArrayList<>();
         ComboBoxOption cb;
         for (Categoria cate : repo.findAll()) {

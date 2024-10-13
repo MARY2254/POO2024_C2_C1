@@ -15,12 +15,13 @@ public class MainX {
     private final Scanner mary = new Scanner(System.in);
 
     private void mostrarMenu() {
-        System.out.println("------------------------------------------");
-        System.out.println("1. Crear");
-        System.out.println("2. Actualizar");
-        System.out.println("3. Listar");
-        System.out.println("4. Eliminar");
-        System.out.println("5. Salir");
+        System.out.println("|------------------------------------------|");
+        System.out.println("| 1. Crear---------------------------------|");
+        System.out.println("| 2. Actualizar----------------------------|");
+        System.out.println("| 3. Listar--------------------------------|");
+        System.out.println("| 4. Eliminar------------------------------|");
+        System.out.println("| 5. Salir---------------------------------|");
+        System.out.println("|------------------------------------------|");
         System.out.print("Seleccione una opción: ");
     }
 
@@ -63,10 +64,11 @@ public class MainX {
     }
 
     public void opcionesEliminar() {
-        System.out.println("¿Qué te gustaría hacer?");
-        System.out.println("1. Eliminar una categoría");
-        System.out.println("2. Eliminar todas las categorías");
-        System.out.println("3. Volver al menú");
+        System.out.println("|------------------------------------------|");
+        System.out.println("| 1. Eliminar una categoría----------------|");
+        System.out.println("| 2. Eliminar todas las categorías---------|");
+        System.out.println("| 3. Volver al menú------------------------|");
+        System.out.println("|------------------------------------------|");
         System.out.print("Seleccione una opción: ");
 
         int opcion = mary.nextInt();
@@ -95,10 +97,10 @@ public class MainX {
     }
 
     public void eliminarTodasCategorias() {
-        System.out.println("¿Estás seguro de que deseas eliminar todas las categorías? (S/N)");
+        System.out.println("¿Estás seguro de que deseas eliminar todas las categorías? (si/no)");
         String confirmacion = mary.nextLine();
 
-        if (confirmacion.equalsIgnoreCase("S")) {
+        if (confirmacion.equalsIgnoreCase("si")) {
             repository.deleteAll();
             System.out.println("Todas las categorías han sido eliminadas.");
         } else {
