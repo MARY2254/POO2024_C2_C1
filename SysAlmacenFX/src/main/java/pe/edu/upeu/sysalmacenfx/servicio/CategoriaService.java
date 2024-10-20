@@ -56,7 +56,7 @@ public class CategoriaService {
         return repo.findById(id).get();
     }
     public Categoria searchById(long id) {
-        return repo.findById(id).get();
+        return repo.findById(id).orElse(null);
     }
 
     public List<ComboBoxOption> listarCombobox(){

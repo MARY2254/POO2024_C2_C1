@@ -50,7 +50,7 @@ public class MarcaService {
         return repo.findById(id).get();
     }
     public Marca searchById(long id) {
-        return repo.findById(id).get();
+        return repo.findById(id).orElse(null);
     }
 
     public List<ComboBoxOption> listarCombobox(){
