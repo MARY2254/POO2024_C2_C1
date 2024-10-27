@@ -1,3 +1,4 @@
+
 package pe.edu.upeu.sysalmacenfx.componente;
 
 import javafx.scene.control.Alert;

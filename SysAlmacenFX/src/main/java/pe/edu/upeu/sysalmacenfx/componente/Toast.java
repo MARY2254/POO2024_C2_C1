@@ -49,4 +49,3 @@ public class Toast {
         fadeOut.setOnFinished(event -> popup.hide());  // Ocultar popup al finalizar fade out
     }
 }
-

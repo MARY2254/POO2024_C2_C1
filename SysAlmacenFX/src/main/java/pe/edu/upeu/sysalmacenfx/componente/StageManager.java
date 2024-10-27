@@ -15,4 +15,3 @@ public class StageManager {
         return primaryStage;
     }
 }
-
